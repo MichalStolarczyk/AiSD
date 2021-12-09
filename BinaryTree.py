@@ -8,18 +8,18 @@ class BinaryTree:
     def __init__(self, value):
         self.root = BinaryNode(value)
 
-    def __str__(self):
-        current = self.root
-        str = ""
-        str.append(current.value), str.append('\n')
-        def printTree(self):
-            if current.left_child is not None:
-                str.append(current.left_child.value)
-            str.append('  ')
-            if current.right_child is not None:
-                str.append(current.right_child.value)
-            str.append('\n')
-            printTree(current)
+    #def __str__(self):
+    #    current = self.root
+    #    str = ""
+    #    str.append(current.value), str.append('\n')
+    #    def printTree(self):
+    #        if current.left_child is not None:
+    #            str.append(current.left_child.value)
+    #        str.append('  ')
+    #        if current.right_child is not None:
+    #            str.append(current.right_child.value)
+    #        str.append('\n')
+    #        printTree(current)
 
 
 def left_line(tree: BinaryTree) -> List[BinaryNode]:
